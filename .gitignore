@@ -1,21 +1,30 @@
-#editors
+# editors
 .vscode/
-#virtual environemts
+*.vscode/*
+# virtual environemts
 venv
 /venv/*
 /env/*
 .env*
 .venv
 .python-version
-#databases
+# databases
 db.sqlite*
 *.db
-#cached data
+# cached data
 *cache
 __pycache__
 /application/__pycache__/*
 /testing/__pycache__/*
 .pytest_cache/
+*.tmp*
+*.history
+# pip-install stuff
+pip-log.txt
+pip-delete-this-directory.txt
+# flask
+instance/
+.webassets-cache
 # tests
 .cover
 .coverage
