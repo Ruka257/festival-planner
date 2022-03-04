@@ -3,7 +3,9 @@
 <p> <strong>What the project does:</strong> This project consists of a Flask webapp designed to allow users to create a list of festivals they wish to attend, and add acts to the lineup in different timeslots.</p>
 
 
-<strong>How does the project work?</strong> This app uses a MySQL database with CRUD functionality. My ERD for the database can be found here https://drawsql.app/ruka257/diagrams/festival-schedules
+<strong>How does the project work?</strong> This app uses a MySQL database with CRUD functionality. My ERD for the database can be found here https://drawsql.app/ruka257/diagrams/festival-schedules  
+
+<p><a href=’https://rebekah-akingbala.atlassian.net/jira/software/projects/QBAFA/code’>Jira board GitHub repo integration</a></p>
 
 <strong>Who is the project useful for?</strong> 
 
