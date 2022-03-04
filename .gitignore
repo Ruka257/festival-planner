@@ -1,7 +1,24 @@
+#editors
+.vscode/
+#virtual environemts
 venv
 /venv/*
-schedule.db
+/env/*
+.env*
+.venv
+.python-version
+#databases
+db.sqlite*
+*.db
+#cached data
+*cache
 __pycache__
 /application/__pycache__/*
 /testing/__pycache__/*
+.pytest_cache/
+# tests
+.cover
+.coverage
+.coverage*
 /testing/.coverage
+test.sh
