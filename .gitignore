@@ -1,0 +1,7 @@
+venv
+/venv/*
+schedule.db
+__pycache__
+/application/__pycache__/*
+/testing/__pycache__/*
+/testing/.coverage
