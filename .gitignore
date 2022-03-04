@@ -1,6 +1,10 @@
 # editors
 .vscode/
 *.vscode/*
+#text files
+*.txt
+#exception
+!requirements.txt
 # virtual environemts
 venv
 /venv/*
