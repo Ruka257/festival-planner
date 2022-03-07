@@ -58,4 +58,4 @@ def update(set_time):
     update_set_time = Set_Times.query.first() #change queries to retrive any record in db
     update_set_time.set_time = set_time
     db.session.commit()
-    return update_festival.location
+    return update_set_time.set_time
