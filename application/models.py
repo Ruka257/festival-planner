@@ -13,5 +13,5 @@ class Set_Times(db.Model): #schema
     set_time_id = db.Column(db.Integer, unique=True, primary_key=True)
     set_time = db.Column(db.datetime)
     festival_id = db.Column(db.Integer, unique=True, ForeignKey=True)
-    act = db.Column(db.__str__)
+    act_name = db.Column(db.__str__)
     seen = db.Column(db.Boolean, default=False)
