@@ -5,6 +5,7 @@ from application import db
 class Festivals(db.Model): #schema
     festival_id = db.Column(db.Integer, unique=True, primary_key=True)
     festival_name = db.Column(db.__str__)
+    start_date = db.Column(db.date)
     location = db.Column(db.__str__)
     attended = db.Column(db.Boolean, default=False)
 
