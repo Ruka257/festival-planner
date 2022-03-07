@@ -3,12 +3,13 @@ from wtforms import StringField, SubmitField, BooleanField, DateTimeField
 from wtforms.validators import DataRequired, Length, ValidationError
 
 class CreateForm(FlaskForm):
-    name = StringField('Title', validators=[DataRequired(), Length(min=2,max=30)])
-    location = StringField('Description', validators=[DataRequired(), Length(min=2,max=300)])
+    name = StringField('Name', validators=[DataRequired(), Length(min=2,max=50)])
+    start_date = DateTimeField('Start Date', validators=[DataRequired()])
+    location = StringField('Location', validators=[DataRequired(), Length(min=2,max=300)])
     submit = SubmitField('Create')
 
 class UpdateForm(FlaskForm):
     name = StringField('Title', validators=[DataRequired(), Length(min=2,max=30)])
-    #timeslot = DateTimeField('Description', validators=[DataRequired(), Length(min=2,max=300)])
+    set_time = DateTimeField('Description', validators=[DataRequired(), Length(min=2,max=300)])
     attended = BooleanField('Attended')
     submit = SubmitField('Update')
