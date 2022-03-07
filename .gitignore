@@ -15,6 +15,7 @@ venv
 # databases
 db.sqlite*
 *.db
+*.sql
 # cached data
 *cache
 __pycache__
