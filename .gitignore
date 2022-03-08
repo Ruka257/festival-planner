@@ -36,3 +36,5 @@ instance/
 .coverage*
 /testing/.coverage
 test.sh
+# scripts
+install-jenkins.sh
