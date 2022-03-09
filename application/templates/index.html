@@ -9,7 +9,8 @@
         <p>Read a list of all the festival schedules you've made</p>
         <span><a href="{{ url_for('create') }}">Create New Festival</a></span>
         <span><a href="{{ url_for('viewall') }}">View All Festivals</a></span>
-        <span><a href="{{ url_for('update') }}">Update a Festival</a></span>Update Festivals
-        <span><a href="{{ url_for('delete') }}">Delete a Festival</a></span>Delete Festivals
+        <span><a href="{{ url_for('update') }}">Update a Festival</a></span>
+        <span><a href="{{ url_for('delete') }}">Delete a Festival</a></span>
+        {% block festival %}{% endblock festival %}
     </body>
 </html>
