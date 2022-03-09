@@ -5,12 +5,11 @@
     </head>
     <body style="text-align: center">
         <h2>Welcome to My Festival Planner</h2>
-        <p>Create unique festivals in your dream locations, featuring dream acts in your preferred timeslots!</p>
+        <p>Create unique festivals, and add acts to your preferred timeslots!</p>
         <p>Read a list of all the festival schedules you've made</p>
-        <h1>My Fantasy Festival!</h1>
-        <span><a href="create">Create New Festival</a></span>
-        <span><a href="viewall">View All Festivals</a></span>
-        <span><a href="update">Update a Festival</a></span>Update Festivals
-        <span><a href="delete">Delete a Festival</a></span>Delete Festivals
+        <span><a href="{{ url_for('create') }}">Create New Festival</a></span>
+        <span><a href="{{ url_for('viewall') }}">View All Festivals</a></span>
+        <span><a href="{{ url_for('update') }}">Update a Festival</a></span>Update Festivals
+        <span><a href="{{ url_for('delete') }}">Delete a Festival</a></span>Delete Festivals
     </body>
 </html>
