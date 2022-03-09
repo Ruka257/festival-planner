@@ -1,5 +1,6 @@
 from flask import Flask, render_template, request, url_for #html templates for routes, url_for crud index hyperlinks
 from application import app, db
+from datetime import date
 from application.models import Festivals
 from application.forms import CreateForm, UpdateForm
 
@@ -8,12 +9,19 @@ from application.forms import CreateForm, UpdateForm
 def home():
     return 'My Festival Planner'
 
-@app.route('/create') #CREATE a festival
+@app.route('/create') #CREATE a festival with all attributes in Festivals table
 def create():
-    new_festival = Festivals(name="", start_date="", location="")
+    new_festival = Festivals(festival_name="", start_date="", location="")
     db.session.add(new_festival)
     db.session.commit()
     return 'Festival created.'
+
+@app.route('/create/<festival_name>')
+def create(festival_name):
+    new_festival = Festivals(festival_name=festival_name, description="Describe festival here...")
+    db.session.add(new_festival)
+    db.session.commit()
+    return f'Created new festival: {festival_name}'
 
 @app.route('/viewall') #READ functionality
 def viewall():
