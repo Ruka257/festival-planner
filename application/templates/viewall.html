@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>My Festival Planner</title>
+    </head>
+    <body style="text-align: center">
+        {% extends 'index.html' %}
+        {% block festival %}
+            <h3>All Festivals:</h3>
+            <p>
+        {% for festival in festivals %}
+                Festival Name: {{ festival.festival_name }} <br>
+                Start Date: {{ festival.start_date }} <br>
+                Location: {{ festival.location }} <br>
+        {%if festival.attended == True %}
+                Festival <span style="color: green">attended!</span>
+        {% else %}
+                Festival <span style="color: red">not yet attended :(</span>
+        {% endif %}
+        <span><a href="{{ url_for('create') }}">Create New Festival</a></span>
+        <span><a href="{{ url_for('viewall') }}">View All Festivals</a></span>
+        <span><a href="{{ url_for('update') }}">Update a Festival</a></span>
+        <span><a href="{{ url_for('delete') }}">Delete a Festival</a></span>
+        {% endblock festival %}
+    </body>
+</html>
