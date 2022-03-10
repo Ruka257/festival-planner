@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>My Festival Planner</title>
+    </head>
+    {% extends 'index.html' %}
+    {% block festival %}
+<h2>Create Festival:</h2>
+<div class="form">
+    <form method="'POST" action="">
+        {{ form.hidden_tag() }} <Plaintext>--CSRF protection requirement</Plaintext>
+        {{ form.name.label }}
+        {{ form.name }}
+        {% if form.name.errors %}  
+    </form>
+</div>
+</html>

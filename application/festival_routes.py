@@ -9,6 +9,14 @@ from application.forms import CreateForm, UpdateForm
 def home():
     return 'My Festival Planner'
 
+@app.route('/viewall') #READ functionality
+def viewall():
+    all_festivals = Festivals.query.all()
+    festival_string = ""
+    for festivals in all_festivals:
+        festival_string += "<br>"+ festivals.name
+    return festival_string
+
 @app.route('/create') #CREATE a festival with all attributes in Festivals table
 def create():
     new_festival = Festivals(festival_name="", start_date="", location="")
@@ -22,14 +30,6 @@ def create(festival_name):
     db.session.add(new_festival)
     db.session.commit()
     return f'Created new festival: {festival_name}'
-
-@app.route('/viewall') #READ functionality
-def viewall():
-    all_festivals = Festivals.query.all()
-    festival_string = ""
-    for festivals in all_festivals:
-        festival_string += "<br>"+ festivals.name
-    return festival_string
 
 @app.route('/update/<name>') #UPDATE
 def update(name):
