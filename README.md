@@ -6,7 +6,7 @@
 <p> <strong>What this project does:</strong> This project consists of a Flask webapp designed to allow users to create a list of festivals they wish to attend, and add acts to the festival lineup in different timeslots.</p>
 <p><strong>How does the project work?</strong> This app uses a Flask sqlite database with CRUD functionality. My Entity Relationship Diagram (ERD) for the two tables in the database can be found <a href="https://drive.google.com/file/d/1AAGMHl3QwkLKCghRbad20MXuhN5mQizZ/view?usp=sharing">here.</a></p>
 
-A series of epics were written consisting of user stories for the app user as well as the DevOps engineer over the course of <a href="https://rebekah-akingbala.atlassian.net/jira/software/projects/QBAFA/boards/2/roadmap">two sprints</a>. <p><a href="https://rebekah-akingbala.atlassian.net/jira/software/projects/QBAFA/code">Jira board GitHub repo integration using Smart Commits.</a></p>
+A series of epics were written on Jira consisting of user stories for the app user as well as the DevOps engineer over the course of <a href="https://rebekah-akingbala.atlassian.net/jira/software/projects/QBAFA/boards/2/roadmap">two sprints</a>. Jira progress updates, comments, and task assignment were integrated into a number of <p><a href="https://rebekah-akingbala.atlassian.net/jira/software/projects/QBAFA/code">Ruka257 GitHub Repos</a> using Smart Commits.</p>
 
 <strong>Who is the project useful for?</strong> 
 
