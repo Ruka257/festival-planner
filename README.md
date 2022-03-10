@@ -8,14 +8,10 @@
 <p><strong>How does the project work?</strong>
 
 <p>A series of epics were written on Jira consisting of user stories for the app user as well as the DevOps engineer over the course of <a href="https://rebekah-akingbala.atlassian.net/jira/software/projects/QBAFA/boards/2/roadmap">two sprints</a>. Jira progress updates, comments, and task assignment were integrated into a number of <a href="https://rebekah-akingbala.atlassian.net/jira/software/projects/QBAFA/code">Ruka257 GitHub Repos</a> using Smart Commits.</p>
-<p>Credentials for meeting the definition of done were scaled back due to the initial sprint taking place over one week rather than two weeks. Linked issues that were blocked by the inability to create a functional MySQL db slowed progress. A <a href="https://docs.google.com/spreadsheets/d/1A8KUrp5BsRaqJweXAlm7HBaXc4gdpwFKgeboT5DccEA/edit?usp=sharing">risk assessment matrix</a> was created to anticipate and acknowledge setbacks during the project. Entries in row 5 attest to the difficulties in creating a working MySQL script in this project. 
-This app uses a Flask sqlite database instead (db) with efforts made to meet CRUD functionality necesscary for the Minimum Viable Product (MVP). My Entity Relationship Diagram (ERD) for the two tables in the db can be found <a href="https://drive.google.com/file/d/1AAGMHl3QwkLKCghRbad20MXuhN5mQizZ/view?usp=sharing">here.</a>
-[alt text](https://drive.google.com/file/d/1AAGMHl3QwkLKCghRbad20MXuhN5mQizZ/view?usp=sharing "ERD Festivals and Set_times tables with festival foreign Key")</p>
+<p>Credentials for meeting the definition of done were scaled back due to the initial sprint taking place over one week rather than two weeks. Linked issues that were blocked by the inability to create a functional MySQL db slowed progress. A <a href="https://docs.google.com/spreadsheets/d/1A8KUrp5BsRaqJweXAlm7HBaXc4gdpwFKgeboT5DccEA/edit?usp=sharing">risk assessment matrix</a> was created to anticipate and acknowledge setbacks during the project. Entries in row 5 attest to the difficulties in creating a working MySQL script in this project.</p>
+Instead, this app uses a Flask sqlite database instead (db) with efforts made to meet CRUD functionality necesscary for the Minimum Viable Product (MVP). My Entity Relationship Diagram (ERD) for the two tables in the db can be found <a href="https://drive.google.com/file/d/1AAGMHl3QwkLKCghRbad20MXuhN5mQizZ/view?usp=sharing">here.</a>
+[alt text](https://drive.google.com/file/d/1AAGMHl3QwkLKCghRbad20MXuhN5mQizZ/view?usp=sharing "ERD Festivals and Set_times tables with festival foreign Key")<br> In a third sprint, the database this app uses could model a many-to-many relationship, with an additional join table for multiple stages that acts can perform on at any given festival. </p>
 
 <strong>Who is the project useful for?</strong> 
 
 <strong>How can you get started with the project?</strong>  Set-up the site and write down exact instructions
-
-<strong>Where can users get help with the project?</strong>:
-
-<strong>Who maintains and contributes to the project?</strong>:
