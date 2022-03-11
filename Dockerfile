@@ -10,4 +10,4 @@ ENV DATABASE_URI=${DATABASE_URI}
 RUN pip3 install -r requirements.txt
 # Expose correct port
 EXPOSE 5000
-# Create an entrypoint
+# Create an entrypoint in ['container', 'run'] format with CMD layer
